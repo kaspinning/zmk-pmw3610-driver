@@ -702,19 +702,19 @@ static int pmw3610_report_data(const struct device *dev) {
 
     float speed_multiplier = 1.0; //速度の倍率
     if (movement_size > 60) {
-        speed_multiplier = 2.2;
+        speed_multiplier = 1.0;
     }else if (movement_size > 30) {
-        speed_multiplier = 2.2;
+        speed_multiplier = 1.0;
     }else if (movement_size > 5) {
-        speed_multiplier = 2.2;
+        speed_multiplier = 1.0;
     }else if (movement_size > 4) {
-        speed_multiplier = 2.2;
+        speed_multiplier = 1.0;
     }else if (movement_size > 3) {
-        speed_multiplier = 2.2;
+        speed_multiplier = 1.0;
     }else if (movement_size > 2) {
-        speed_multiplier = 2.2;
+        speed_multiplier = 1.0;
     }else if (movement_size > 1) {
-        speed_multiplier = 2.2;
+        speed_multiplier = 1.0 ;
     }
 
     raw_x = raw_x * speed_multiplier;
